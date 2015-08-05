@@ -1,6 +1,11 @@
 require 'sinatra'
 
 post '/' do
-#  $stdout.puts params
-  $stdout.puts request.body
+
+  #default puts params  
+  $stdout.puts params
+  
+  #to read and print the ODK aggregate POST request
+  $stdout.puts request.body.read
+
 end
